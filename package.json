@@ -1,0 +1,25 @@
+{
+  "name": "mikroorm-express-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon ./server/app.js",
+    "mikro-orm": "mikro-orm",
+    "db:update": "npx mikro-orm schema:update --run --fk-checks"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mikro-orm/core": "^6.4.15",
+    "@mikro-orm/postgresql": "^6.4.15",
+    "dotenv": "^16.5.0",
+    "express": "^4.20.0"
+  },
+  "devDependencies": {
+    "@mikro-orm/cli": "^6.4.15",
+    "nodemon": "^3.1.10"
+  }
+}
